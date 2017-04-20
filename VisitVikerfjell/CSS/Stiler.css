@@ -1,0 +1,474 @@
+/* CSS Document */
+html{
+  margin:0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+/* laget av: Tobias, Kontrolert av Ole */
+header{
+  padding: 23px 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 300px; /* bildehøyden */
+  width: 100%;
+  overflow: hidden;
+  position:relative;
+  margin: 0 auto;
+  background-image:url("../bilder/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  z-index: 1;
+
+}
+.header-image{
+
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+
+
+}
+#logginn{
+  background-color: white;
+  margin: 0;
+  padding:0;
+  text-align: right;
+  width:100%;
+  height:50px;
+  position: relative;
+}
+/* laget av: Christian, kontrolert av Tobias */
+#box{/* området for søkefeltet */
+  position:relative;
+  display: inline-block;
+  width: 20%;
+  margin: 0;
+  padding:0;
+  float:right;
+  overflow: hidden;
+}
+a.button {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1px 6px;
+
+    font: 13.3333px Arial;
+    text-rendering: auto;
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    text-indent: 0;
+    text-shadow: none;
+    letter-spacing: normal;
+    word-spacing: normal;
+    color: black;
+
+    border: 2px solid black;
+    border-image: initial;
+
+    background-color: white;
+
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    cursor: default;
+}
+
+a.button:active {border-style: inset;}
+
+.container-1{
+  width:95%;
+  height: 50px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  float: right;
+}
+
+.container-1 input#sok{/* selve søkeboks */
+  width: 85%;
+  height: 80%;
+  font-size: 14pt;
+  float:left;
+  color: #BDBCBC;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.container-1 img{ /* forstørrelsesglass til søk */
+  width: 30px;
+  left: 2%;
+  position: absolute;
+  top: 12%;
+  margin-left: 1px;
+  margin-top: 1px;
+  z-index: 1;
+  color: #ffffff;
+}
+/* laget av: Tobias, kontrolert av Christian og Gabriel*/
+/* header bilde */
+.bilde-layout{
+  position: relative;
+}
+
+.bilde-logo{/* Logo Vikerfjell */
+  top:0px;
+  left:20px;
+  position:absolute;
+}
+
+nav{ /*navigeringsmenyen*/
+  background-color: white;
+  opacity: 0.85;
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+}
+
+nav ul{ /*lista text osv*/
+  margin:0;
+  padding:0;
+  background-color: white;
+  height: 50px;
+  text-align: center;
+  font-size: 14pt;
+  list-style-type: none;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li a{ /* selve knappen*/
+  color:black;
+  background-color: white;
+  display:block;
+  text-decoration: none;
+  text-align: center;
+  height: 100%;
+  margin-left: 20px;
+}
+
+li a {
+    padding: 13.5px 16px;
+    vertical-align: baseline;
+}
+
+nav ul li a:hover {
+  background-color: #d0d2e2;
+}
+.mobile{
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+button{
+  position: absolute;
+    top: 15px;
+    right: 15px;
+    border: 0;
+    text-indent: 200%;
+    overflow: hidden;
+    background: rgba(255,255,255,.8) url("http://i.imgur.com/vKRaKDX.png") center no-repeat;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-size: 80%;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    transition: all 400ms ease;
+    &.expanded
+      transform: rotate(90deg);
+      background-color: transparent;
+      border: 0;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  width:auto;
+  height: auto;
+  display:table;
+  background-color: grey;
+  /* fonttexttyper under hentet fra "https://css-tricks.com/snippets/css/better-helvetica/" */
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 300;
+}
+/* laget av: Christian og Gabriel, kontrolert av Tobias og Ole */
+.mainContent{ /* Hovedinnholdet på siden */
+  line-height: 25px;
+  border-radius: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.content{
+  width:68%;
+  float:left;
+  margin-left:2%;
+  margin-top:0%;
+}
+
+.topContent{
+  background-color: #FFF;
+  border-radius: 5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius: 5px;
+  padding: 3% 5%;
+  margin-top:15px;
+  margin-bottom: 15px;
+}
+
+.bottomContent{
+  background-color: #FFF;
+  border-radius: 5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius: 5px;
+  padding: 3% 5%;
+  margin-top:15px;
+  margin-bottom: 15px;
+}
+
+.top-sidebar{ /* sidebar top høyre i innholdet*/
+  width: 21%;
+  float: left;
+  background-color: #FFF;
+  -moz-border-radius:5px;
+  -webkit-border-radius: 5px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 0px;
+  padding: 2% 3%;
+}
+
+.middle-sidebar{ /* sidebar mid høyre i innholdet*/
+  width: 21%;
+  float: left;
+  background-color: #FFF;
+  border-radius: 5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius: 5px;
+  margin-top:15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 2% 3%;
+}
+
+.bottom-sidebar{ /* sidebar bunn høyre i innholdet*/
+  width: 21%;
+  float: left;
+  background-color: #FFF;
+  border-radius: 5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius: 5px;
+  margin: 15px 15px 15px 15px;
+  padding: 2% 3%;
+}
+
+/*##########________FOOTER_______###########*/
+/* laget av: Ole, kontrolert av Tobias, Gabriel og Christian */
+/*----Verdier for Footer-----*/
+footer{
+  text-align: left;
+  color:white;
+  background-color: #374049;
+  position: relative;
+  width:100%;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display:table-row;
+  border:2px solid red;
+  min-height: 100%;
+}
+
+/*~~~~~~~~Bilde av kart, forhold til Hønefoss, Oslo og Gm~~~~~~~~~*/
+.kart{
+float:left;
+width:30%;
+min-width:319px;
+height:208px;
+margin-top:10px;
+margin-left:10px;
+}
+
+/*---------Område for web2.0 (FB,IG & SC)----------*/
+.sosmed{
+float:left;
+width:30%;
+min-width:273px;
+height:208px;
+}
+
+/*--------Kontakt Informasjon for vikerfjell (epost, tlf, adresse--------*/
+.kontakt1{
+	float:right;
+text-align:left;
+position:relative;
+color:white;
+width:30%;
+min-width:278px;
+height:208px;
+}
+
+/* ~~~~~Størrelse på font for "Kontakt:"~~~~~~~*/
+.kontakt1 .toppen{
+	font-size:20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*~~~~~~~~RESPONSIVT DESIGN ~ ut ifra størrelse på skjerm~~~~~~~~~~*/
+/*-----------1000PX--------------*/
+/* laget av: Gabriel, kontrollert av Tobias, Christian og Ole */
+@media screen and (max-width: 1000px) {
+    .kontakt1{
+	margin-right:25%;
+	padding-bottom:1rem;
+	margin-top:5px;
+    }
+	.kart{
+	float:right;
+	margin-right:25%;
+	padding-bottom:1rem;
+	margin-top:5px;
+	}
+	.sosmed{
+	float:right;
+	margin-right:25%;
+	padding-bottom:1rem;
+	margin-top:5px;
+	}
+  nav ul{
+    height: 100px;
+  }
+}
+
+/*-----------911PX--------------*/
+
+@media screen and (max-width: 911px) {
+    .kontakt1{
+	margin-right:25%;
+	padding-bottom:1rem;
+	margin-top:5px;
+    }
+	.kart{
+	float:right;
+	margin-right:25%;
+	padding-bottom:1rem;
+	margin-top:5px;
+	}
+	.sosmed{
+	float:right;
+	margin-right:25%;
+	padding-bottom:1rem;
+	margin-top:5px;
+	}
+  .mobile{
+    display: block;
+  }
+  nav{
+    display: none;
+  }
+}
+/*-----------645PX--------------*/
+
+@media screen and (max-width: 645px) {
+  .body{
+    width: 90%;
+  }
+  .content{
+    width:100%;
+  }
+  .middle-sidebar{
+    margin-top:2%;
+  }
+  .bottom-sidebar{
+    margin-top:2%;
+  }
+    .kontakt1{
+	margin-right:25%;
+	padding-bottom:1rem;
+	margin-top:5px;
+    }
+	.kart{
+	float:right;
+	margin-right:25%;
+	padding-bottom:1rem;
+	margin-top:5px;
+	}
+	.sosmed{
+	float:right;
+	margin-right:25%;
+	padding-bottom:1rem;
+	margin-top:5px;
+	}
+  #box{
+    left:0;
+    position: absolute;
+  }
+
+}
+
+/*-----------480PX--------------*/
+@media screen and (max-width: 480px) {
+    #wrapper_foot {
+       margin:1rem;
+    }
+}
+
+/*-----------445PX--------------*/
+@media screen and (max-width: 445px) {
+    .kontakt1{
+	  float:left;
+	  margin:5px;
+    }
+	.kart{
+	float:left;
+	  margin:5px;
+	}
+	.sosmed{
+	float:left;
+	  margin:5px;
+	}
+#box{
+  width: 10%;
+}
+nav ul{
+  height: 150px;
+}
+}
+
+/*-----------300PX--------------*/
+@media screen and (max-width: 300px) {
+    .kart{
+     margin:0;
+    }
+}

@@ -1,0 +1,41 @@
+body {
+	height: 90vh;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+  background-color: grey;
+}
+.login-side {
+	width: 350px;
+}
+.form {
+	position: relative;
+	background: #EEEEEE;
+	text-align: center;
+	margin: 50px;
+	padding: 25px;
+	background-color: white;
+}
+.innlogging-form input[type="text"], .innlogging-form input[type="password"], .glemt-form input[type="text"] {
+	background-color: #ABCDEF;
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 5px;
+	box-sizing: border-box;
+}
+.glemt-form {
+	display:none;
+}
+h1 {
+	font-size: 18pt;
+	text-align:center;
+}
+input[type="submit"] {
+	width:100%;
+	padding: 5px;
+}
+button {
+	font-size:9pt;
+	margin-top:10px;
+
+}
