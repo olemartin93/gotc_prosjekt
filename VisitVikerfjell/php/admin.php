@@ -7,6 +7,7 @@
     header("location:logginn.php");
     die();
   }
+  //Kommentar-test
 ?>
 <!DOCTYPE html>
 <html>
